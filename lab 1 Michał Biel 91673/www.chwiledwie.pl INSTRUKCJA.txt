@@ -1,0 +1,2 @@
+z1 -->> www.chwiledwie.pl
+d1 -->> www.chwiledwie.pl/d1

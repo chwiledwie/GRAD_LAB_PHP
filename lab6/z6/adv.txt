@@ -1,0 +1,109 @@
+<script type="text/javascript">
+var bannersnack_embed = {"hash":"bxksdflf1","width":250,"height":250,"t":1477849094,"userId":26029541,"type":"html5"};
+</script>
+<script type="text/javascript" src="//cdn.bannersnack.com/iframe/embed.js"></script>
+
+
+rpg polskiego studia CD Project
+
+
+
+CREATE TABLE user (
+idU INT NOT NULL auto_increment,
+login VARCHAR(35) NOT NULL,
+password VARCHAR(55) NOT NULL,
+PRIMARY KEY (idU)
+)
+ENGINE=InnoDB;
+
+
+CREATE TABLE usera (
+a_id INT(11) NOT NULL AUTO_INCREMENT,
+namead varchar(50) NOT NULL,
+cat varchar(50) NOT NULL,
+photo mediumblob,
+price INT NOT NULL,
+VAT varchar(50) NOT NULL,
+delivery varchar(55) NOT NULL,
+opis varchar(255) NOT NULL,
+userK INT(10) NULL DEFAULT NULL,
+PRIMARY KEY (a_id),
+INDEX user_usera (userK),
+CONSTRAINT user_usera FOREIGN KEY (userK) REFERENCES user (idU) ON UPDATE SET NULL ON DELETE SET NULL
+)
+ENGINE=InnoDB;
+
+
+CREATE TABLE userd (
+d_id INT(11) NOT NULL AUTO_INCREMENT,
+surname varchar(50) NOT NULL,
+name varchar(50) NOT NULL,
+email varchar(70) NOT NULL,
+phone INT NOT NULL,
+location varchar(120),
+userK INT(10) NULL DEFAULT NULL,
+PRIMARY KEY (d_id),
+INDEX user_userd (userK),
+CONSTRAINT user_userd FOREIGN KEY (userK) REFERENCES user (idU) ON UPDATE SET NULL ON DELETE SET NULL
+)
+ENGINE=InnoDB;
+
+
+
+
+
+
+-----------
+ $querr="UPDATE usera JOIN user SET usera.userK=user.idU;";
+                
+                $result11=  mysql_query($querr,$conn2)or die ('BLAD!'.mysql_error());
+
+
+
+
+$querr="INSERT INTO
+    usera
+    (userK)
+SELECT
+    '$idU'
+FROM
+    user
+WHERE
+    user.idU='$idU';";
+
+
+$querr="insert into usera (namead,cat,photo,price,VAT,delivery,opis) values ('$namead','$category','$photo','$price','$VAT','$delivery','$opis');";
+                
+
+$querr="insert into usera (namead,cat,photo,price,VAT,delivery,opis) values ('$namead','$category','$photo','$price','$VAT','$delivery','$opis');";
+             
+
+
+CREATE TABLE user (
+  idU INT NOT NULL AUTO_INCREMENT,
+  login varchar(50) NOT NULL,
+  password varchar(50) NOT NULL,
+  PRIMARY KEY (idU)
+) ENGINE=INNODB;
+
+CREATE TABLE usera (
+  a_id INT,
+  user_id INT,
+  namead varchar(50) NOT NULL,
+cat varchar(50) NOT NULL,
+photo mediumblob,
+price INT NOT NULL,
+VAT varchar(50) NOT NULL,
+delivery varchar(55) NOT NULL,
+opis varchar(255) NOT NULL,
+  INDEX par_ind (user_id),
+  CONSTRAINT fk_user FOREIGN KEY (user_id)
+  REFERENCES user(idU)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE
+) ENGINE=INNODB;
+
+
+ALTER TABLE usera ADD INDEX par_ind ( user_id );
+ALTER TABLE usera ADD CONSTRAINT fk_user
+FOREIGN KEY ( user_id ) REFERENCES user ( idU ) ON DELETE CASCADE ON UPDATE RESTRICT;

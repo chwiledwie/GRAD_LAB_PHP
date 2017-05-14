@@ -1,0 +1,28 @@
+SELECT * FROM user u JOIN usera ua ON u.idU = ua.user_id 
+
+SELECT * FROM user u JOIN usera ua ON u.idU = ua.user_id WHERE u.idU = 3;
+
+
+SELECT * FROM usera ua JOIN user u ON ua.user_id = u.idU
+
+
+--- -- -- -- -- -- -- ---
+do wyswietlania ogloszen danego usera w panelu
+
+ $llA=$_SESSION['login'];
+            $querrrA="SELECT idU FROM user WHERE login='$llA';";
+            
+            $rrA=  mysql_query($querrrA);
+            
+            while($row = mysql_fetch_array($rrA)) 
+{
+            $iDA=$row['idU'];
+
+
+SELECT * FROM usera ua JOIN user u ON ua.user_id = u.idU WHERE u.idU = $iDU;
+
+}
+
+
+// polaczenie usera i userd
+SELECT ua.cat,ua.price,ud.phone,ud.email,ud.location FROM usera ua JOIN userd ud ON ua.user_id = ud.userK WHERE ua.user_id = 3;

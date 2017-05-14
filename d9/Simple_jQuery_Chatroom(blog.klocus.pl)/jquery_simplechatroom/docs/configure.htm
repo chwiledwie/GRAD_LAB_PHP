@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+<title> PHP + jQuery Simple Chatroom, from AdvanceByDesign </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="500px">
+<tr><td>
+[ <a href="index.htm">Documentation index</a> --
+<a href="../index.htm">Welcome page</a> ]
+
+<!-- Begin page content -->
+
+<h1>PHP + jQuery Simple Chatroom Documentation</h1>
+
+<h2>Configurable Settings</h2>
+
+<p>To change some of the Chatroom settings, open the file
+'<i>chatconfig.php</i>' from the 'www' folder in a plain-text
+editor (for example Windows Notepad) and edit the values of the
+desired variables:</p>
+
+<ul>
+	<li><b>$chat_postlimit</b>
+		<p>The maximum number of chat posts to store in the chatroom
+		data file.  Too high values can cause slow loading times
+		and possibly 'hog' server bandwidth.  Must be a whole number.
+		<code>$chat_postlimit = 30;</code>
+		<i>30 most recent chat messages will be stored</i>.</p></li>
+	<li><b>$chat_timelimit</b>
+		<p>The minimum number of seconds a user must wait in between
+		posts on the chatroom.  A higher value means less work for
+		the server and less chance of spamming, but can be annoying
+		for users.  Must be a whole number (the number of seconds).
+		<code>$chat_timelimit = 3;</code>
+		<i>Users would have to wait a minimum of three seconds between
+		posting on the server</i>.</p></li>
+	<li><b>$chat_maxline</b>
+		<p>The maximum number of characters a users post in the chatroom
+		can contain.  Must be a whole number.
+		<code>$chat_maxline = 100;</code>
+		<i>Users posts cannot exceed 100 characters length</i>.</p></li>
+	<li><b>$chat_refresh</b>
+		<p>The number of seconds between chatroom refreshes.  A lower number
+		can give a smoother effect, but causes more traffic for the server.
+		The value can be a decimal number, as it is converted into milliseconds.
+		<code>$chat_refresh = 0.8;</code>
+		<i>The chatroom content is refreshed every 800 milliseconds</i>.</p></li>
+	<li><b>$chat_datafile</b>
+		<p>The file in which chatroom content will be stored.  By default this
+		is "chat.dat".  You do not need to change this value, but if you wish to
+		then use the relative path of the target file enclosed within
+		speach marks.</p></li>
+</ul>
+
+<!-- End Page Content -->
+</td></tr>
+</table>
+
+</body>
+</html>

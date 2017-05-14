@@ -1,0 +1,13 @@
+﻿Ścieżka,Tytuł,Długość,Ścieżka pliku
+01,Intro,00:38,F:\Święta 2016\Intro.wav
+02,Lulajże Jezuniu ,03:15,F:\Święta 2016\Lulajże Jezuniu .wav
+03,Anioł pasterzą mówił,01:20,F:\Święta 2016\Anioł pasterzą mówił.wav
+04,Cicha noc,02:55,F:\Święta 2016\Cicha noc.wav
+05,Santa Claus in coming to town,01:44,F:\Święta 2016\Santa Claus in coming to town.wav
+06,Wśród nocnej ciszy,03:36,F:\Święta 2016\Wśród nocnej ciszy.wav
+07,Przybieżeli do Betlejem,01:21,F:\Święta 2016\Przybieżeli do Betlejem.wav
+08,Last Christmas,01:28,F:\Święta 2016\Last Christmas.wav
+09,Gdy śliczna panna,03:03,F:\Święta 2016\Gdy śliczna panna.wav
+10,Gdy się Chrystus rodzi,02:09,F:\Święta 2016\Gdy się Chrystus rodzi.wav
+11,Jezus maluśienki,02:35,F:\Święta 2016\Jezus maluśienki.wav
+12,Jingle Bells,01:42,F:\Święta 2016\Jingle Bells.wav

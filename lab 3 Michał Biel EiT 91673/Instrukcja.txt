@@ -1,0 +1,14 @@
+Logowanie do konta na stronie chwiledwie.pl/z3 --->>>>
+
+login: bielas
+haslo: one23
+
+
+
+Dane do bazy: --->>>>
+
+login: 20033357_0000004
+haslo: Discovery00
+
+
+www.chwiledwie.pl/d3 -->> Galeria z instalatora

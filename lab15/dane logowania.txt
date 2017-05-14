@@ -1,0 +1,18 @@
+z15 konto wypozyczjacego - www.chwiledwie.pl/z15 -->> zakladka Zaloguj:
+
+login:piotr
+haslo:piotr
+
+
+z15 konto pracownika - www.chwiledwie.pl/z15/loginpf.php
+
+login:pracownik1
+haslo:gonzo11
+
+
+
+
+baza mysql:
+
+20033357_0000031
+Discovery00
